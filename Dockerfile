@@ -1,4 +1,4 @@
-## Build command: docker build -t myexams-site . || docker build --no-cache -t myexams-site .
+## Build command: docker build -t postdesign . || docker build --no-cache -t postdesign .
 
 ## Build image.
 FROM node:lts-alpine3.16

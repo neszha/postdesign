@@ -1,5 +1,5 @@
 /*!
- * Post Design
+ * Post Design by Neszha Productions.
  * Copyright(c) 2023.
  */
 

@@ -6,9 +6,6 @@ dotenv.config();
 export const APP_PORT = process.env.APP_PORT || 80;
 export const APP_DEV_MODE = (process.env.NODE_ENV === 'development');
 
-// Private Key.
-export const ACCESS_KEY_HASH = (process.env.ACCESS_KEY_HASH || '').replace(/\/x/g, '$');
-
 // Path Configuration.
 export const PATH_ROOT = process.cwd();
 
