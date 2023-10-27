@@ -1,0 +1,31 @@
+version: "3.7"
+
+networks:
+  net-myexams:
+    name: net-myexams
+
+services:
+  postdesign:
+    container_name: postdesign
+    image: postdesign:0.1.0
+    restart: always
+    networks:
+      - net-myexams
+    volumes:
+      - ./storage:/app/storage
+    # ports:
+    #   - 8080:80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.postdesign.rule=Host(`postdesign.web.id`)"
+      - "traefik.http.routers.postdesign.entrypoints=websecure"
+      - "traefik.http.routers.postdesign.tls.certresolver=resolver"
+      - "traefik.http.services.postdesign.loadbalancer.server.port=80"
+    environment:
+      ## App Configuration
+      - APP_PORT=80
+      ## Time Zone [Asia/Jakarta|Asia/Makasar|Asia/Jayapura]
+      - TZ=Asia/Jakarta
+      ## Telegram API
+      - TELEGRAM_TOKEN=xxx
+      - TELEGRAM_ALLOW_USERS=xxx,yyy

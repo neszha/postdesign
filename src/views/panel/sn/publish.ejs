@@ -1,0 +1,43 @@
+<div class="page-header">
+    <div class="row align-items-center">
+        <div class="col">
+            <h1 class="page-header-title"><%= title %></h1>
+        </div>
+        <div class="col-auto">
+            <a class="btn btn-white" href="/panel/sn">
+                <i class="bi-arrow-left me-1"></i>
+                <span>Kembali</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">Penerbitan Serial Number</h4>
+    </div>
+    <div class="card-body">
+        <div class="row py-4">
+            <div class="col-lg-8 offset-lg-2">
+                
+                <div class="alert alert-soft-info" role="alert">
+                    <h4 class="alert-heading">Diterbitkan!</h4>
+                    <p>Serial number berhasil diterbitkan. Salin dan inputkan kode di bawah ini ke dalam aplikasi!</p>
+                    <label class="form-label">Serial Number:</label>
+                    <textarea class="form-control" rows="6" disabled><%- generated.serialNumber %></textarea>
+                    <br>
+                    <label class="form-label">Payload:</label>
+                    <textarea class="form-control" rows="13" disabled><%- generatedBeauty %></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <a href="/panel/sn" class="btn btn-primary">
+                        <span>Selesai</span>
+                        <i class="bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

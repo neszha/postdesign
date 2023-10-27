@@ -1,0 +1,114 @@
+<div class="page-header">
+    <div class="row align-items-center">
+        <div class="col">
+            <h1 class="page-header-title">Form Settings</h1>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-5">
+    <div class="card-header">
+        <h4 class="card-title">Kontrol Versi Aplikasi</h4>
+    </div>
+    <div class="card-body">
+        <div class="row py-4">
+            <div class="col-lg-8 offset-lg-2">
+                <form method="POST" action="/panel/forms/update-app-version">
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label form-label">
+                            <strong>My Exams Web</strong>
+                        </label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web" class="form-control" placeholder="0.0.0" required
+                                value="<%= formsObj['version:myexams-web']%>">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label form-label">
+                            <strong>My Exams Android</strong>
+                        </label>
+                        <div class="col-lg-10">
+                            <input type="text" name="android" class="form-control" placeholder="0.0.0" required
+                                value="<%= formsObj['version:myexams-android']%>">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Simpan Perubahan</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-5">
+    <div class="card-header">
+        <h4 class="card-title">Kontrol Link Aplikasi Demo</h4>
+    </div>
+    <div class="card-body">
+        <div class="row py-4">
+            <div class="col-lg-8 offset-lg-2">
+                <form method="POST" action="/panel/forms/update-app-demo-link">
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label form-label">
+                            <strong>Akses Peserta</strong>
+                        </label>
+                        <div class="col-lg-10">
+                            <input type="url" name="participant" class="form-control" placeholder="/link" required
+                                value="<%= formsObj['link:myexams-demo-participant']%>">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label form-label">
+                            <strong>Akses Admin</strong>
+                        </label>
+                        <div class="col-lg-10">
+                            <input type="url" name="panel" class="form-control" placeholder="/link" required
+                                value="<%= formsObj['link:myexams-demo-panel']%>">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Simpan Perubahan</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-5">
+    <div class="card-header">
+        <h4 class="card-title">My Exams Android</h4>
+    </div>
+    <div class="card-body">
+        <div class="row py-4">
+            <div class="col-lg-8 offset-lg-2">
+                <form method="POST" action="/panel/forms/upload-myexams-apk" enctype="multipart/form-data">
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label form-label">
+                            <strong>Upload APK</strong>
+                        </label>
+                        <div class="col-lg-10">
+                            <input type="file" name="apk" class="form-control" required accept=".apk">
+                            <p class="mt-1">
+                                <span>File download: </span>
+                                <a href="<%= formsObj['link:myexams-android-download'] %>">
+                                    <%= formsObj['link:myexams-android-download'] %>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Upload File</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
