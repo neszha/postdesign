@@ -109,7 +109,10 @@
     .banner_section {text-align: center;}
     .banner_section .app_btn , .banner_section .used_app {justify-content: center;}
     .trial_box {justify-content: center;}
-    .trial_box form {width: 80%;}
+    .trial_box form {
+        width: 80%;
+        justify-content: center;
+    }
     .trial_box form .form-group .form-control {width: 370px;}
     .trial_box_list ul {justify-content: center;}
     .banner_section .banner_images {margin-top: 100px;}
