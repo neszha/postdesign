@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   myexams-site:
-    container_name: myexams-site
-    image: myexams-site:0.1.0-dev-1
+    postdesign: postdesign
+    image: postdesign:0.1.0
     restart: always
     volumes:
-      - ./myexams-site-storage:/app/storage
+      - ./storage:/app/storage
     ports:
       - ${APP_PORT}:80
     environment:
@@ -14,8 +14,6 @@ services:
       - APP_PORT=80
       ## Time Zone
       - TZ=${TZ}
-      ## Private Key
-      - ACCESS_KEY_HASH=${ACCESS_KEY_HASH}
       ## Telegram API
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
       - TELEGRAM_ALLOW_USERS=${TELEGRAM_ALLOW_USERS}
