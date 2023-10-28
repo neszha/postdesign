@@ -15,16 +15,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#beranda">Beranda</a>
+                        <a class="nav-link" href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#layanan">Layanan</a>
+                        <a class="nav-link" href="#service">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#penduan">Panduan</a>
+                        <a class="nav-link" href="#guide">Panduan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pesan">Pesan Sekarang</a>
+                        <a class="nav-link" href="#example">Sampel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Pesan Sekarang</a>
                     </li>
                 </ul>
             </div>
@@ -32,7 +35,7 @@
     </div>
 </header>
 
-<section class="banner_section" id="beranda">
+<section class="banner_section">
     <div class="hero_bg">
         <img src="/images/hero-bg.png" alt="image">
     </div>
@@ -50,11 +53,11 @@
                     </div>
                 </div>
                 <div class="trial_box">
-                    <form action="#">
-                        <div class="form-group">
+                    <div class="form-group">
+                        <a href="#service">
                             <button class="btn mx-0">LIHAT LAYANAN</button>
-                        </div>
-                    </form>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -77,7 +80,7 @@
     </div>
 </section>
 
-<section class="row_am features_section" id="layanan">
+<section class="row_am features_section" id="service">
     <div class="feature_section_bg">
         <img src="images/section-bg.png" alt="image">
     </div>
@@ -145,7 +148,7 @@
     </div>
 </section>
 
-<section class="row_am about_app_section" id="penduan">
+<section class="row_am about_app_section" id="guide">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -183,14 +186,102 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="contact.html" class="btn puprple_btn">PESAN SEKARANG</a>
+                    <a href="#order" class="btn puprple_btn">PESAN SEKARANG</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="row_am interface_section" id="example">
+    <div class="container-fluid">
+        <div class="section_title">
+            <h2>Sampel <span>Desain</span></h2>
+            <p>
+                Kami telah menyiapkan contoh desain sebagai referensi Anda atau bisa <br>
+                menggunakan referensi dari sumber lainnya.
+            </p>
+        </div>
+
+        <div class="screen_slider">
+            <div id="screen_slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="screen_frame_img">
+                        <img src="/images/hero/banner-02.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- screen slider end -->
+    </div>
+    <!-- container end -->
+</section>
+
+<section class="row_am newsletter_section" id="order">
+    <div class="container">
+        <div class="newsletter_box d-block">
+            <div class="section_title mb-3">
+                <h2>Pesan Sekarang!</h2>
+                <p>Isi form di bawah ini dan Anda akan diarahkan ke WhatsApp kami.</p>
+            </div>
+            <form action="" class="text-left">
+                <div class="form-group mb-3">
+                    <label for="name" class="text-white">Nama:</label>
+                    <input id="name" type="text" class="form-control" placeholder="Nama" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="type" class="text-white">Tipe:</label>
+                    <input id="type" type="text" class="form-control" placeholder="Contoh: Poster Wisuda/Ucapan Wisuda/Ucapan Ultah" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="name" class="text-white">Spesifikasi:</label>
+                    <textarea class="form-control" rows="6" placeholder="Jelaskan spesifikasi desain secara detail." required></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn">PESAN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
 <footer>
+    <div class="footer_bg" style="z-index: -4;">
+        <img src="images/section-bg.png" alt="image">
+    </div>
+    
+    <div class="section_title py-5">
+        <div class="mt-5">
+            <h2 class="pt-5">Terimakasih Telah Menggunakan <br> Layanan <span>Post Design</span></h2>
+            <p class="pb-5 px-2">Jasa desain banner kreatif untuk berbagai acara, termasuk wisuda, perayaan kelulusan, <br> dan ulang tahun untuk momen spesial Anda.</p>
+        </div>
+    </div>
+
     <div class="bottom_footer">
         <div class="container">
             <div class="row">

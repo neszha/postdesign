@@ -151,7 +151,9 @@
 
 /* ------Common-Css------------- */
 
-html{scroll-behavior:smooth}
+html{
+    scroll-behavior:smooth
+}
 
 body {
     margin: 0;
@@ -161,7 +163,6 @@ body {
     line-height: 1.7;
     font-family: 'Poppins', sans-serif;
     color: var(--body-text-purple);
-    /*background-color: var(--light-purple);*/
 }
 
 .page_wrapper {
@@ -710,7 +711,7 @@ header.fixed .navbar {
 }
 
 /* trial_box button */
-.trial_box form .form-group .btn {
+.trial_box .form-group .btn {
     height: 55px;
     width: 170px;
     text-transform: uppercase;
@@ -724,7 +725,7 @@ header.fixed .navbar {
     z-index: 1;
 }
 
-.trial_box form .form-group .btn::before {
+.trial_box .form-group .btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -737,11 +738,11 @@ header.fixed .navbar {
     z-index: -1;
 }
 
-.trial_box form .form-group .btn:hover::before {
+.trial_box .form-group .btn:hover::before {
     width: 100%;
 }
 
-.trial_box form .form-group .btn:hover {
+.trial_box .form-group .btn:hover {
     color: var(--purple);
 }
 
@@ -1839,7 +1840,6 @@ iframe#youtubevideo {
 /* interface wraper */
 .interface_section .screen_slider {
     margin-top: 35px;
-    min-height: 720px;
 }
 
 /* interface images */
@@ -2032,13 +2032,9 @@ box-shadow: 1px 4px 8px -2px rgba(0,0,0,0.5);
     z-index: 99;
 }
 
-.newsletter_box .section_title {
-    width: 45%;
-}
-
-.newsletter_box form {
+/* .newsletter_box form {
     width: 60%;
-}
+} */
 
 /* newsletter heading h2 */
 .newsletter_box .section_title h2 {
@@ -2058,17 +2054,25 @@ box-shadow: 1px 4px 8px -2px rgba(0,0,0,0.5);
 }
 
 /* newsletter input  */
-.newsletter_box form {
+/* .newsletter_box form {
     display: flex;
-}
+} */
 
 .newsletter_box form .form-group {
     margin-bottom: 0;
 }
 
-.newsletter_box form .form-group .form-control {
-    width: 430px;
+input.form-control {
     height: 55px;
+}
+
+textarea.form-control {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.newsletter_box form .form-group .form-control {
+    /* width: 430px; */
     border-radius: 6px;
     color: var(--dark-purple);
 }
@@ -2085,7 +2089,7 @@ box-shadow: 1px 4px 8px -2px rgba(0,0,0,0.5);
     color: var(--purple);
     background-color: var(--bg-white);
     border-radius: 6px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: 600;
     position: relative;
     overflow: hidden;

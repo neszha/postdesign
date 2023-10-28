@@ -32,10 +32,7 @@
 
     /* footer section bg animation */
     footer .footer_bg { position: absolute; left: -600px;}
-
-
 }
-
 
 @media screen and (max-width:1200px) {
 
@@ -73,11 +70,7 @@
     .free_app_section .container .free_app_inner .free_img {margin-top: -180px;}
 
     /* newsletter section */
-    .newsletter_box .section_title {width: 60%;}
     .newsletter_box .section_title h2 {font-size: 24px; letter-spacing: 1px;}
-    .newsletter_box form .form-group .form-control {width: 250px;}
-
-
 }
 
 @media screen and (max-width:992px) {
@@ -172,17 +165,12 @@
     /* newsletter section */
     .newsletter_box {flex-direction: column; padding: 30px 20px;}
     .newsletter_box .section_title , .newsletter_box form {width: 100%; margin: 10px 0; justify-content: center;}
-    .newsletter_box form .form-group .form-control {width: 350px;}
-    .newsletter_box .section_title h2, .newsletter_box .section_title p {text-align: center;}
 
     /* footer section */
     footer .top_footer .logo , footer h3 {margin-bottom: 20px;}
     footer .abt_side {margin-bottom: 50px;}
     footer .top_footer .try_out {margin-left: 0;}
     footer .top_footer .col-md-6 {margin-bottom: 15px;}
-
-    
-
 }
 
 @media screen and (max-width:767px) {
@@ -329,10 +317,12 @@
 
     .purple_backdrop {display: none;}
 
+    .newsletter_box form .form-group .btn {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:479px) {
-
     /* about app section */
     .about_app_section .about_img::before {left: 49%;}
 }
