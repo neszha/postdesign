@@ -1,3 +1,5 @@
+import { APP_VERSION } from '../helpers/config.helper.js';
+
 export default {
 
     async home(req, res) {
@@ -5,6 +7,7 @@ export default {
         res.render('landing/home', {
             layout: '_layouts/landing',
             title: 'Beranda',
+            APP_VERSION,
         });
     },
 
