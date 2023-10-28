@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 import landingRoute from './landing.route.js';
-import { PATH_ROOT } from '../helpers/config.helper.js';
+import { PATH_ROOT, APP_VERSION } from '../helpers/config.helper.js';
 
 /** Endpoint level: /* */
 const router = new Router();
@@ -16,6 +16,7 @@ router.use((req, res) => {
     res.render('landing/404', {
         layout: '_layouts/landing',
         title: 'Not Found',
+        APP_VERSION,
     });
 });
 
