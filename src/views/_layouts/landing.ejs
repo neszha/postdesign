@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-    <title>Jasa Berbagai Jenis Desain - Post Design</title>
+    <title><%= title %> - Post Design</title>
     <meta name="robots" content="index, follow">
     <meta name="author" content="Fanesa Hadi Pramana">
     <meta name="keywords" content="Post Desain, Jasa Desain Banner, Jasa Desain Poster">
     <meta name="description" content="Jasa desain banner kreatif untuk berbagai acara, termasuk wisuda, perayaan kelulusan, dan ulang tahun untuk momen spesial Anda.">
-    <meta property="og:title" content="Jasa Berbagai Jenis Desain - Post Design">
-    <meta property="og:description" content="asa desain banner kreatif untuk berbagai acara, termasuk wisuda, perayaan kelulusan, dan ulang tahun untuk momen spesial Anda.">
+    <meta property="og:title" content="<%= title %> - Post Design">
+    <meta property="og:description" content="Jasa desain banner kreatif untuk berbagai acara, termasuk wisuda, perayaan kelulusan, dan ulang tahun untuk momen spesial Anda.">
     <meta property="og:image" content="/logo.png">
     <meta property="og:url" content="https://postdesign.neszha.my.id">
     <link rel="stylesheet" href="/css/icofont.min.css">
@@ -34,8 +34,22 @@
     <script src="/js/jquery.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/moment.min.js"></script>
     <script src="/js/aos.js"></script>
     <script src="/js/main.js?version=<%= APP_VERSION %>"></script>
+    <script src="/js/order.js?version=<%= APP_VERSION %>"></script>
+    <script src="/js/tracking.js?version=<%= APP_VERSION %>"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async() => {
+            try {
+                await sendTrackingMessage();
+            } catch (error) {
+                setTimeout(() => {
+                    sendTrackingMessage();
+                }, 2500);
+            }
+        });
+    </script>
 </body>
 
 </html>

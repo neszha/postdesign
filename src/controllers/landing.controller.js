@@ -6,7 +6,7 @@ export default {
         // Done.
         res.render('landing/home', {
             layout: '_layouts/landing',
-            title: 'Beranda',
+            title: 'Jasa Berbagai Jenis Desain',
             APP_VERSION,
         });
     },

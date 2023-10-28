@@ -1,6 +1,8 @@
 {
   "name": "postdesign",
-  "version": "0.1.0",
+  "app-name": "Post Design Site",
+  "company-name": "Neszha Productions",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "type": "module",

@@ -249,18 +249,19 @@
                 <h2>Pesan Sekarang!</h2>
                 <p>Isi form di bawah ini dan Anda akan diarahkan ke WhatsApp kami.</p>
             </div>
-            <form action="" class="text-left">
+            <form id="order-form" class="text-left">
+                <input type="hidden" name="cs_number" value="6287876027769">
                 <div class="form-group mb-3">
                     <label for="name" class="text-white">Nama:</label>
-                    <input id="name" type="text" class="form-control" placeholder="Nama" required>
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Nama" required>
                 </div>
                 <div class="form-group mb-3">
                     <label for="type" class="text-white">Tipe:</label>
-                    <input id="type" type="text" class="form-control" placeholder="Contoh: Poster Wisuda/Ucapan Wisuda/Ucapan Ultah" required>
+                    <input id="type" name="type" type="text" class="form-control" placeholder="Contoh: Poster Wisuda/Ucapan Wisuda/Ucapan Ultah" required>
                 </div>
                 <div class="form-group mb-4">
-                    <label for="name" class="text-white">Spesifikasi:</label>
-                    <textarea class="form-control" rows="6" placeholder="Jelaskan spesifikasi desain secara detail." required></textarea>
+                    <label for="spesification" class="text-white">Spesifikasi:</label>
+                    <textarea id="spesification" name="spesification" class="form-control" rows="6" placeholder="Jelaskan spesifikasi desain secara detail." required></textarea>
                 </div>
                 <div class="form-group text-right">
                     <button class="btn">PESAN</button>
