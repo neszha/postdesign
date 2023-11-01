@@ -7,6 +7,7 @@ COPY . .
 
 ## Run commands.
 RUN mkdir storage
+RUN yarn install --production
 
 # Run command on container starting.
-CMD yarn install --production && node .
+CMD node .
